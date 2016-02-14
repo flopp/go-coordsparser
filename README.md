@@ -5,10 +5,10 @@ A library for parsing (geographic) coordinates in go (golang)
 
 go-coordsparser allows you to parse lat/lng coordinates from strings in various popular formats. Currently supported formats are:
 
-- **D** (decimal degrees), e.g. "40.76, -73.984"
-- **HD** (hemisphere prefix, decimal degrees), e.g. "N 40.76 W 73.984"
-- **HDM** (hemisphere prefix, integral degrees, decimal minutes), e.g. "N 40 45.600 W 73 59.040"
-- **HDMS** (hemisphere prefix, integral degrees, integral minutes, decimal seconds), e.g. "N 40 45 36.0 W 73 59 02.4"
+- **D** (decimal degrees), e.g. `40.76, -73.984`
+- **HD** (hemisphere prefix, decimal degrees), e.g. `N 40.76 W 73.984`
+- **HDM** (hemisphere prefix, integral degrees, decimal minutes), e.g. `N 40 45.600 W 73 59.040`
+- **HDMS** (hemisphere prefix, integral degrees, integral minutes, decimal seconds), e.g. `N 40 45 36.0 W 73 59 02.4`
 
 # How?
 
@@ -28,7 +28,7 @@ import "github.com/flopp/go-coordsparser"
 ### Using
 go-coordsparser provides several functions for parsing coordinate strings: a general parsing function `coordsparser.Parse`, which accepts all supported formats, as well as specialized functions `coordsparser.ParseD`, `coordsparser.ParseHD`, `coordsparser.ParseHDM`, `coordsparser.ParseHDMS` for the corresponding coordinate formats.
 
-Each function takes a single string as a parameter and returns a idiomatic "lat, lng, error" triple, where "lat" and "lng" are decimal degrees (float64) with -90 <= lat <= 90 and -180 <= lng <= 180.
+Each function takes a single string as a parameter and returns an idiomatic `lat, lng, error` triple, where `lat` and `lng` are decimal degrees (`float64`) with -90 ≤ `lat` ≤ 90 and -180 ≤ `lng` ≤ 180.
 
 ```go
 // parse any format
