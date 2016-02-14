@@ -14,22 +14,22 @@ import (
 // Parse parses a coordinate string and returns a lat/lng pair or an error
 func Parse(s string) (float64, float64, error) {
 	lat, lng, err := ParseD(s)
-	if err != nil {
+	if err == nil {
 		return lat, lng, nil
 	}
 
 	lat, lng, err = ParseHD(s)
-	if err != nil {
+	if err == nil {
 		return lat, lng, nil
 	}
 
 	lat, lng, err = ParseHDM(s)
-	if err != nil {
+	if err == nil {
 		return lat, lng, nil
 	}
 
 	lat, lng, err = ParseHDMS(s)
-	if err != nil {
+	if err == nil {
 		return lat, lng, nil
 	}
 
