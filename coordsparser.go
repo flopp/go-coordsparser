@@ -3,6 +3,7 @@
 // Use of this source code is governed by a MIT-style
 // license that can be found in the LICENSE file.
 
+// Package coordsparser is a library for parsing (geographic) coordinates in various string formats
 package coordsparser
 
 import (
