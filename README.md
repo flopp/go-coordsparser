@@ -1,4 +1,4 @@
-[![GoDoc](https://godoc.org/github.com/flopp/go-coordsparser?status.svg)](https://godoc.org/github.com/flopp/go-coordsparser)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/flopp/go-coordsparser)](https://pkg.go.dev/github.com/flopp/go-coordsparser)
 [![Build Status](https://travis-ci.org/flopp/go-coordsparser.svg)](https://travis-ci.org/flopp/go-coordsparser)
 [![Go Report Card](https://goreportcard.com/badge/flopp/go-coordsparser)](https://goreportcard.com/report/flopp/go-coordsparser)
 [![License MIT](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](https://github.com/flopp/go-coordsparser)
